@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="30.5 31.5 400 500" height="500" width="400">
+    <path d="M230.56 531.14c74.32-53.92 125.26-122.02 155.74-208.16 27.64-78.1 38.73-172.75 33.91-289.35l-.02-.46H40.37l-.02.46c-4.81 116.6 6.28 211.24 33.91 289.35 30.48 86.14 81.42 154.24 155.74 208.16l.28.2z" style="fill:#0085ca;fill-opacity:1"/>
+    <path d="M292.271 32.675 230.5 187.498 168.729 32.675M230.5 187.5l190.206-60.531c-2.05 40.991-6.078 80.704-13.463 118.822zM230.5 187.498 40.06 126.887c2.05 40.991 6.067 80.702 13.452 118.82L230.5 187.499Z" style="fill:#fff;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:bevel;stroke-opacity:1"/>
+    <path d="M326.11 437.462c-25.792 33.59-56.621 65.314-95.604 93.467-38.983-28.152-69.813-59.876-95.605-93.465L230.506 187.5Z" style="fill:#fff;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:bevel;stroke-opacity:1"/>
+    <path style="fill:none;fill-rule:evenodd;stroke:#000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:bevel;stroke-opacity:1" d="M292.271 33.176 230.5 188.1 168.729 32.675"/>
+    <path style="fill:none;fill-rule:evenodd;stroke:#000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:bevel;stroke-opacity:1" d="M407.243 245.791 229.9 187.5l190.306-60.531"/>
+    <path d="M53.512 245.708c58.996-19.404 118.592-38.805 177.588-58.208L40.06 126.887" style="fill:none;fill-rule:evenodd;stroke:#000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:bevel;stroke-opacity:1"/>
+    <path style="fill:none;fill-rule:evenodd;stroke:#000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:bevel;stroke-opacity:1" d="M134.901 437.464 230.5 186.9l95.61 250.064"/>
+    <path d="M41.04 33.21C31.97 252.66 77.3 419.16 230.5 530.31c153.19-111.15 198.51-277.65 189.44-497.1H41.04m-.92-.95h380.74l.04.92c4.82 116.66-6.28 211.36-33.93 289.52-30.51 86.24-81.51 154.41-155.91 208.39l-.56.41-.56-.41c-74.4-53.98-125.4-122.15-155.91-208.39C46.38 244.54 35.28 149.84 40.1 33.18l.04-.92z"/>
+</svg>

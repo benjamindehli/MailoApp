@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="30.5 31.5 400 500" height="500" width="400">
+    <path style="fill:#0085ca" d="M230.56 531.14c74.32-53.92 125.26-122.02 155.74-208.16 27.64-78.1 38.73-172.75 33.91-289.35l-.02-.46H40.37l-.02.46c-4.81 116.6 6.28 211.24 33.91 289.35 30.48 86.14 81.42 154.24 155.74 208.16l.28.2.28-.2z"/>
+    <path d="M41.04 33.21C31.97 252.66 77.3 419.16 230.5 530.31c153.19-111.15 198.51-277.65 189.44-497.1H41.04m-.92-.95H420.86l.04.92c4.82 116.66-6.28 211.36-33.93 289.52-30.51 86.24-81.51 154.41-155.91 208.39l-.56.41-.56-.41c-74.4-53.98-125.4-122.15-155.91-208.39C46.38 244.54 35.28 149.84 40.1 33.18l.04-.92z"/>
+    <path style="fill:#fff;fill-rule:evenodd;stroke:#000;stroke-linejoin:round" d="M239.04 242.89h-4.69v9.91l66.15 64.7-20 32v63h-100v-63l-20-32 66.15-64.7v-9.91h-4.69l8.54-10.11z"/>
+    <path style="fill:#0085ca;fill-rule:evenodd;stroke:#000;stroke-linecap:round;stroke-linejoin:round" d="m248.75 349.5 10-32H295l-20 32zM217.75 349.5l-10-32h45.5l-10 32H230.5zM212.25 349.5l-10-32H166l20 32z"/>
+    <path style="fill:#fff;fill-rule:evenodd;stroke:#000;stroke-linejoin:round" d="M157.04 79.61h-4.69v9.91l66.15 64.7-20 32v63h-100v-63l-20-32 66.15-64.7v-9.91h-4.69l8.54-10.11z"/>
+    <path style="fill:#0085ca;fill-rule:evenodd;stroke:#000;stroke-linecap:round;stroke-linejoin:round" d="m166.75 186.22 10-32H213l-20 32zM135.75 186.22l-10-32h45.5l-10 32H148.5zM130.25 186.22l-10-32H84l20 32z"/>
+    <path style="fill:#fff;fill-rule:evenodd;stroke:#000;stroke-linejoin:round" d="M321.04 79.61h-4.69v9.91l66.15 64.7-20 32v63h-100v-63l-20-32 66.15-64.7v-9.91h-4.69l8.54-10.11z"/>
+    <path style="fill:#0085ca;fill-rule:evenodd;stroke:#000;stroke-linecap:round;stroke-linejoin:round" d="m330.75 186.22 10-32H377l-20 32zM299.75 186.22l-10-32h45.5l-10 32H312.5zM294.25 186.22l-10-32H248l20 32z"/>
+</svg>
