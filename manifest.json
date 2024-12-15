@@ -1,9 +1,9 @@
 {
     "name": "Mailo App",
     "short_name": "Mailo App",
-    "theme_color": "#1f1f1f",
+    "theme_color": "#000000",
     "lang": "no-NB",
-    "background_color": "#1f1f1f",
+    "background_color": "#000000",
     "display": "standalone",
     "orientation": "any",
     "scope": "/MailoApp/",
