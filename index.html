@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Mailo App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#1f1f1f" />
+        <link rel="stylesheet" type="text/css" media="screen" href="src/styles/fonts.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="src/styles/main.css" />
+        <link rel="icon" type="image/x-icon" sizes="16x16" href="src/assets/favicons/favicon-16.ico" />
+        <link rel="icon" type="image/x-icon" sizes="24x24" href="src/assets/favicons/favicon-24.ico" />
+        <link rel="icon" type="image/x-icon" sizes="32x32" href="src/assets/favicons/favicon-32.ico" />
+        <link rel="icon" type="image/x-icon" sizes="48x48" href="src/assets/favicons/favicon-48.ico" />
+        <link rel="icon" type="image/x-icon" sizes="64x64" href="src/assets/favicons/favicon-64.ico" />
+        <link rel="icon" type="image/x-icon" sizes="96x96" href="src/assets/favicons/favicon-96.ico" />
+        <link rel="icon" type="image/x-icon" sizes="128x128" href="src/assets/favicons/favicon-128.ico" />
+        <link rel="icon" type="image/x-icon" sizes="192x192" href="src/assets/favicons/favicon-192.ico" />
+        <link rel="icon" type="image/x-icon" sizes="256x256" href="src/assets/favicons/favicon-256.ico" />
+
+        <script src="src/data/backgroundColors.js"></script>
+        <script src="src/data/imageTypes.js"></script>
+        <script src="src/data/images.js"></script>
+        <script src="src/scripts/dataHelpers.js"></script>
+        <script src="src/scripts/domHelpers.js"></script>
+        <script src="src/scripts/state.js"></script>
+        <script src="src/scripts/init.js"></script>
+        <link rel="manifest" href="manifest.json" />
+    </head>
+    <body>
+        <main id="image-types-menu-screen" class="image-types-menu-screen"></main>
+        <main id="image-screen" class="hidden">
+            <nav id="main-navigation-bar" class="main-navigation-bar">
+                <button id="show-image-types-menu-screen">
+                    <img src="src/assets/icons/list.svg" alt="" />
+                    <span class="label-text">Kategori</span>
+                </button>
+                <label id="toggle-image-order-switch" for="toggle-image-order" class="toggle-icon">
+                    <img src="src/assets/icons/sort_by_alpha.svg" alt="" class="icon-checked" />
+                    <img src="src/assets/icons/shuffle.svg" alt="" class="icon-unchecked" />
+                    <span class="label-text label-checked">Alfabetisk</span>
+                    <span class="label-text label-unchecked">Tilfeldig</span>
+                    <input type="checkbox" id="toggle-image-order" />
+                </label>
+                <label id="toggle-image-title-switch" for="toggle-image-title" class="toggle-icon">
+                    <img src="src/assets/icons/visibility_off.svg" alt="" class="icon-checked" />
+                    <img src="src/assets/icons/visibility_on.svg" alt="" class="icon-unchecked" />
+                    <span class="label-text label-checked">Skjul navn</span>
+                    <span class="label-text label-unchecked">Vis navn</span>
+                    <input type="checkbox" id="toggle-image-title" />
+                </label>
+                <label id="toggle-multiple-images-switch" for="toggle-multiple-images" class="toggle-icon">
+                    <img src="src/assets/icons/image.svg" alt="" class="icon-checked" />
+                    <img src="src/assets/icons/gallery.svg" alt="" class="icon-unchecked" />
+                    <span class="label-text label-checked">Vis ett</span>
+                    <span class="label-text label-unchecked">Vis alle</span>
+                    <input type="checkbox" id="toggle-multiple-images" />
+                </label>
+            </nav>
+            <div id="image-preview-container" class="image-preview-container">
+                <img id="image-preview" class="image-preview" />
+            </div>
+            <nav id="image-navigation-bar" class="image-navigation-bar">
+                <button id="previous-image-button">
+                    <img src="src/assets/icons/arrow_left.svg" alt="" />
+                    <span class="label-text">Forrige</span>
+                </button>
+                <div class="image-info">
+                    <div id="image-title" class="image-title hidden"></div>
+                    <div id="progress">
+                        <span id="current-image-number"></span>/<span id="total-image-number"></span>
+                    </div>
+                </div>
+                <button id="next-image-button">
+                    <img src="src/assets/icons/arrow_right.svg" alt="" />
+                    <span class="label-text">Neste</span>
+                </button>
+            </nav>
+            <div id="image-list-preview-container" class="image-list-preview-container hidden">
+                <div id="image-list-preview" class="image-list-preview"></div>
+            </div>
+        </main>
+    </body>
+</html>
