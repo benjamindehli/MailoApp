@@ -1,0 +1,252 @@
+:root {
+    --text-white: #e8eaed;
+    --navigation-bg: linear-gradient(0deg, rgba(209, 225, 255, 0.08), rgba(209, 225, 255, 0.08)), #1f1f1f;
+    --navigation-hover-bg: rgba(255, 255, 255, 0.08);
+    --navigation-active-bg: rgba(255, 255, 255, 0.16);
+    --transition-bg: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #007a75, #2d003f);
+    background: linear-gradient(45deg, #16343a, #366478);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.image-types-menu-screen {
+    padding: 16px;
+    gap: 8px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100dvh;
+    .image-type-button {
+        display: flex;
+        align-items: center;
+        width: 95dvw;
+        max-width: 500px;
+        height: 92px;
+        padding: 6px 16px;
+        background-color: rgba(255, 255, 255, 0.25);
+        background: var(--navigation-bg);
+        color: var(--text-white);
+        border: none;
+        border-radius: 4px;
+        transition: var(--transition-bg);
+        &:hover {
+            background-color: var(--navigation-hover-bg);
+        }
+        &:active {
+            background-color: var(--navigation-active-bg);
+        }
+        .image-type-icon {
+            width: 75px;
+            height: 75px;
+            object-fit: contain;
+        }
+        .image-type-title {
+            text-align: center;
+            margin-left: 16px;
+            font-size: 30px;
+        }
+    }
+}
+
+.main-navigation-bar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(25, 118, 210);
+    background: var(--navigation-bg);
+    color: var(--text-white);
+    text-align: center;
+    height: 64px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px,
+        rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+    button,
+    .toggle-icon {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 12px;
+        border: none;
+        background-color: transparent;
+        color: var(--text-white);
+        cursor: pointer;
+        transition: var(--transition-bg);
+        .label-text {
+            display: none;
+            @media screen and (min-width: 350px) {
+                display: block;
+                font-size: 14px;
+                width: 100%;
+            }
+        }
+        &:hover {
+            background-color: var(--navigation-hover-bg);
+        }
+        &:active {
+            background-color: var(--navigation-active-bg);
+        }
+    }
+    .toggle-icon {
+        input {
+            display: none;
+        }
+        .icon-checked {
+            display: none;
+        }
+        .icon-unchecked {
+            display: block;
+        }
+        @media screen and (min-width: 350px) {
+            .label-checked {
+                display: none;
+            }
+            .label-unchecked {
+                display: block;
+            }
+        }
+    }
+    .toggle-icon.checked {
+        .icon-checked {
+            display: block;
+        }
+        .icon-unchecked {
+            display: none;
+        }
+        @media screen and (min-width: 350px) {
+            .label-checked {
+                display: block;
+            }
+            .label-unchecked {
+                display: none;
+            }
+        }
+    }
+}
+
+.image-preview-container {
+    display: flex;
+    height: calc(100dvh - 64px - 64px);
+    padding: 16px;
+    .image-preview {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.image-navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--navigation-bg);
+    color: var(--text-white);
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px,
+        rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+    button {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 12px;
+        border: none;
+        background-color: transparent;
+        color: var(--text-white);
+        cursor: pointer;
+        transition: var(--transition-bg);
+        .label-text {
+            display: block;
+            font-size: 14px;
+            width: 100%;
+        }
+        &:hover {
+            background-color: var(--navigation-hover-bg);
+        }
+        &:active {
+            background-color: var(--navigation-active-bg);
+        }
+    }
+    .image-info {
+        text-align: center;
+        position: absolute;
+        bottom: 64px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 12px 0;
+        @media screen and (min-width: 350px) {
+            position: static;
+            width: 190px;
+            background: none;
+            padding: 0;
+        }
+    }
+    .image-list-preview-container {
+        height: calc(100dvh - 64px);
+    }
+}
+
+.image-list-preview-container {
+    height: calc(100dvh - 64px);
+    overflow: auto;
+    .image-list-preview {
+        padding: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px 10px;
+        align-items: center;
+        justify-content: space-evenly;
+        .image-list-item {
+            width: 92px;
+            height: 150px;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            img {
+                width: 92px;
+                max-height: 130px;
+                object-fit: contain;
+                align-self: flex-start;
+            }
+            figcaption {
+                display: none;
+            }
+        }
+        &.show-title {
+            figcaption {
+                display: block;
+                text-align: center;
+                color: var(--text-white);
+                text-shadow: 0.5px 0.5px 2px black;
+                align-self: flex-end;
+            }
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+/*
+@media screen and (min-width: 350px) {
+    .main-navigation-bar {
+        button,
+        .toggle-icon {
+            .label-text {
+                display: block;
+                font-size: 14px;
+                width: 100%;
+            }
+        }
+    }
+}*/
