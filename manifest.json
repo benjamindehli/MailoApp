@@ -6,57 +6,57 @@
     "background_color": "#1f1f1f",
     "display": "standalone",
     "orientation": "any",
-    "scope": "/",
+    "scope": "/MailoApp/",
     "id": "/index.html",
-    "start_url": "/index.html",
+    "start_url": "/MailoApp/index.html",
     "icons": [
         {
-            "src": "/src/assets/favicons/favicon-16.ico",
+            "src": "src/assets/favicons/favicon-16.ico",
             "sizes": "16x16"
         },
         {
-            "src": "/src/assets/favicons/favicon-24.ico",
+            "src": "src/assets/favicons/favicon-24.ico",
             "sizes": "24x24"
         },
         {
-            "src": "/src/assets/favicons/favicon-32.ico",
+            "src": "src/assets/favicons/favicon-32.ico",
             "sizes": "32x32"
         },
         {
-            "src": "/src/assets/favicons/favicon-48.ico",
+            "src": "src/assets/favicons/favicon-48.ico",
             "sizes": "48x48"
         },
         {
-            "src": "/src/assets/favicons/favicon-64.ico",
+            "src": "src/assets/favicons/favicon-64.ico",
             "sizes": "64x64"
         },
         {
-            "src": "/src/assets/favicons/favicon-96.ico",
+            "src": "src/assets/favicons/favicon-96.ico",
             "sizes": "96x96"
         },
         {
-            "src": "/src/assets/favicons/favicon-128.ico",
+            "src": "src/assets/favicons/favicon-128.ico",
             "sizes": "128x128"
         },
         {
-            "src": "/src/assets/favicons/favicon-192.ico",
+            "src": "src/assets/favicons/favicon-192.ico",
             "sizes": "192x192"
         },
         {
-            "src": "/src/assets/favicons/favicon-256.ico",
+            "src": "src/assets/favicons/favicon-256.ico",
             "sizes": "256x256"
         },
         {
-            "src": "/src/assets/favicons/favicon-web.ico",
+            "src": "src/assets/favicons/favicon-web.ico",
             "sizes": "256x256"
         },
         {
-            "src": "/src/assets/appIcons/appicon.svg",
+            "src": "src/assets/appIcons/appicon.svg",
             "sizes": "150x150",
             "type": "image/svg+xml"
         },
         {
-            "src": "/src/assets/appIcons/appicon-maskable.svg",
+            "src": "src/assets/appIcons/appicon-maskable.svg",
             "sizes": "150x150",
             "type": "image/svg+xml",
             "purpose": "maskable"

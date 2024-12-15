@@ -25,11 +25,11 @@ function sortRandomly(array) {
 }
 
 function getImagePath() {
-    return "/src/data/images/";
+    return "src/data/images/";
 }
 
 function getImageTypePath() {
-    return "/src/data/imageTypes/";
+    return "src/data/imageTypes/";
 }
 
 function getImageFileName(image) {

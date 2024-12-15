@@ -4,9 +4,10 @@
     --navigation-hover-bg: rgba(255, 255, 255, 0.08);
     --navigation-active-bg: rgba(255, 255, 255, 0.16);
     --transition-bg: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    --font-default: "Roboto", Arial, sans-serif;
 }
 body {
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: var(--font-default);
     margin: 0;
     padding: 0;
     background: linear-gradient(45deg, #007a75, #2d003f);
@@ -15,6 +16,10 @@ body {
 
 * {
     box-sizing: border-box;
+}
+
+button {
+    font-family: var(--font-default);
 }
 
 .image-types-menu-screen {
