@@ -28,7 +28,9 @@
         <link rel="manifest" href="manifest.json" />
     </head>
     <body>
-        <main id="image-types-menu-screen" class="image-types-menu-screen"></main>
+        <main id="image-types-menu-screen" class="image-types-menu-screen">
+            <nav id="image-types-menu" class="image-types-menu"></nav>
+        </main>
         <main id="image-screen" class="hidden">
             <nav id="main-navigation-bar" class="main-navigation-bar">
                 <button id="show-image-types-menu-screen">
@@ -36,10 +38,10 @@
                     <span class="label-text">Kategori</span>
                 </button>
                 <label id="toggle-image-order-switch" for="toggle-image-order" class="toggle-icon">
-                    <img src="src/assets/icons/sort_by_alpha.svg" alt="" class="icon-checked" />
-                    <img src="src/assets/icons/shuffle.svg" alt="" class="icon-unchecked" />
-                    <span class="label-text label-checked">Alfabetisk</span>
-                    <span class="label-text label-unchecked">Tilfeldig</span>
+                    <img src="src/assets/icons/shuffle.svg" alt="" class="icon-checked" />
+                    <img src="src/assets/icons/sort_by_alpha.svg" alt="" class="icon-unchecked" />
+                    <span class="label-text label-checked">Tilfeldig</span>
+                    <span class="label-text label-unchecked">Alfabetisk</span>
                     <input type="checkbox" id="toggle-image-order" />
                 </label>
                 <label id="toggle-image-title-switch" for="toggle-image-title" class="toggle-icon">

@@ -2,6 +2,10 @@ function getImageTypesMenuScreenElement() {
     return document.getElementById("image-types-menu-screen");
 }
 
+function getImageTypesMenuElement() {
+    return document.getElementById("image-types-menu");
+}
+
 function getImageScreenElement() {
     return document.getElementById("image-screen");
 }
@@ -118,7 +122,7 @@ function updateImageListPreview(appState) {
 }
 
 function populateImageTypesMenu(imageTypes, appState) {
-    const imageTypesMenuScreenElement = getImageTypesMenuScreenElement();
+    const imageTypesMenuElement = getImageTypesMenuElement();
     imageTypes.forEach((imageType) => {
         const imageTypeButtonElement = document.createElement("button");
         imageTypeButtonElement.classList.add("image-type-button");
@@ -147,7 +151,7 @@ function populateImageTypesMenu(imageTypes, appState) {
             hideImageTypesMenuScreen();
             showImageScreen();
         });
-        imageTypesMenuScreenElement.appendChild(imageTypeButtonElement);
+        imageTypesMenuElement.appendChild(imageTypeButtonElement);
     });
 }
 

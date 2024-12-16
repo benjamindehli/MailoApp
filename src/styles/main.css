@@ -23,40 +23,55 @@ button {
 }
 
 .image-types-menu-screen {
-    padding: 16px;
-    gap: 8px;
     display: grid;
     justify-content: center;
     align-content: center;
     height: 100dvh;
-    .image-type-button {
-        display: flex;
-        align-items: center;
-        width: 95dvw;
-        max-width: 500px;
-        height: 92px;
-        padding: 6px 16px;
-        background-color: rgba(255, 255, 255, 0.25);
+    .image-types-menu {
+        gap: 8px;
         background: var(--navigation-bg);
-        color: var(--text-white);
-        border: none;
         border-radius: 4px;
-        transition: var(--transition-bg);
-        &:hover {
-            background-color: var(--navigation-hover-bg);
-        }
-        &:active {
-            background-color: var(--navigation-active-bg);
-        }
-        .image-type-icon {
-            width: 75px;
-            height: 75px;
-            object-fit: contain;
-        }
-        .image-type-title {
-            text-align: center;
-            margin-left: 16px;
-            font-size: 30px;
+        overflow: hidden;
+        .image-type-button {
+            display: flex;
+            align-items: center;
+            width: 95dvw;
+            max-width: 500px;
+            padding: 16px;
+            color: var(--text-white);
+            border: none;
+            background-color: transparent;
+            transition: var(--transition-bg);
+            background-clip: padding-box;
+            &:not(:last-child) {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.025);
+            }
+            &:not(:first-child) {
+                border-top: 1px solid rgba(0, 0, 0, 0.085);
+            }
+            &:hover {
+                background-color: var(--navigation-hover-bg);
+            }
+            &:active {
+                background-color: var(--navigation-active-bg);
+            }
+            .image-type-icon {
+                width: 60px;
+                height: 60px;
+                object-fit: contain;
+                @media screen and (min-width: 350px) {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+            .image-type-title {
+                text-align: center;
+                margin-left: 12px;
+                font-size: 24px;
+                @media screen and (min-width: 350px) {
+                    font-size: 30px;
+                }
+            }
         }
     }
 }
@@ -101,6 +116,7 @@ button {
         }
     }
     .toggle-icon {
+        height: 100%;
         input {
             display: none;
         }
