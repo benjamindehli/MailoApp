@@ -143,6 +143,7 @@ function populateImageTypesMenu(imageTypes, appState) {
             appState.setSelectedType(imageType.type);
             appState.setImages(filterByType(images, imageType.type));
             appState.setCurrentImageIndex(0);
+            toggleImageOrder(appState);
             updateImagePreview(appState);
             updateImageListPreview(appState);
             updateImageTitle(appState);
@@ -230,20 +231,21 @@ function initImagePreview(appState) {
     });
 }
 
-function toggleImageOrder(appState, random) {
+function toggleImageOrder(appState) {
     const images = appState.getImages();
-    if (random) {
-        appState.setImages(sortRandomly(images));
-    } else {
+    if (appState.getSortAlphabetically()) {
         appState.setImages(sortByTitle(images));
+    } else {
+        appState.setImages(sortRandomly(images));
     }
 }
 
 function initToggleImageOrderOnChange(appState) {
     const toggleImageOrderSwitchElement = getToggleImageOrderSwitchElement();
     toggleImageOrderSwitchElement.addEventListener("change", (event) => {
-        toggleImageOrder(appState, event.target.checked);
+        appState.setSortAlphabetically(event.target.checked);
         appState.setCurrentImageIndex(0);
+        toggleImageOrder(appState);
         updateImagePreview(appState);
         updateImageTitle(appState);
         updateCurrentImageNumber(appState);

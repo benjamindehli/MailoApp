@@ -3,6 +3,7 @@ class AppState {
         this.selectedType = props?.selectedType || null;
         this.images = props?.images || [];
         this.currentImageIndex = props?.currentImageNumber || 0;
+        this.sortAlphabetically = props?.sortAlphabetically || false;
         this.displayImageTitle = props?.displayImageTitle || false;
         this.displayMultipleImages = props?.displayMultipleImages || false;
     }
@@ -23,6 +24,12 @@ class AppState {
     }
     setCurrentImageIndex(index) {
         this.currentImageIndex = index;
+    }
+    getSortAlphabetically() {
+        return this.sortAlphabetically;
+    }
+    setSortAlphabetically(sortAlphabetically) {
+        this.sortAlphabetically = sortAlphabetically;
     }
     getDisplayImageTitle() {
         return this.displayImageTitle;
