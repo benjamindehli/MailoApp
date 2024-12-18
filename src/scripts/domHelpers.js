@@ -105,9 +105,19 @@ function updateImageListPreview(appState) {
     const images = appState.getImages();
     const imageListElement = getImageListPreviewElement();
     imageListElement.innerHTML = "";
+    const toggleMultipleImagesSwitchElement = getToggleMultipleImagesSwitchElement();
     images.forEach((image) => {
         const imageListItemElement = document.createElement("figure");
         imageListItemElement.classList.add("image-list-item");
+        imageListItemElement.addEventListener("click", () => {
+            appState.setCurrentImageIndex(images.indexOf(image));
+            appState.setDisplayMultipleImages(false);
+            updateImagePreview(appState);
+            updateImageTitle(appState);
+            updateCurrentImageNumber(appState);
+            toggleDisplayMultipleImages(appState);
+            updateToggleSwitch(false, toggleMultipleImagesSwitchElement);
+        });
         const imageListItemTitleElement = document.createElement("figcaption");
         imageListItemTitleElement.textContent = image.title;
         const imageElement = document.createElement("img");
@@ -175,6 +185,8 @@ function updateImageTitle(appState) {
 }
 
 function updateToggleSwitch(checked, element) {
+    const inputElement = element.querySelector("input");
+    inputElement.checked = checked;
     checked ? element.classList.add("checked") : element.classList.remove("checked");
 }
 
