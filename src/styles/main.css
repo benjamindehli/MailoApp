@@ -12,6 +12,7 @@ body {
     padding: 0;
     background: linear-gradient(45deg, #007a75, #2d003f);
     background: linear-gradient(45deg, #16343a, #366478);
+    touch-action: none;
 }
 
 * {
